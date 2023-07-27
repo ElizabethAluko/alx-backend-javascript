@@ -13,7 +13,6 @@ export default class HolbertonCourse {
     this._students = students;
   }
 
-
   //getter
   get name() {
     return this._name;
@@ -26,7 +25,6 @@ export default class HolbertonCourse {
   get students() {
     return this._students;
   }
-
 
   //setter
   set name(name) {
