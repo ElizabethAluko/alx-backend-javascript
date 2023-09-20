@@ -3,7 +3,8 @@ const readline = require('readline');
 
 // Create an interface for reading from the command line
 const rl = readline.createInterface({
-  input: process.stdin
+  input: process.stdin,
+  output: process.stdout
 });
 
 // Display the initial message
