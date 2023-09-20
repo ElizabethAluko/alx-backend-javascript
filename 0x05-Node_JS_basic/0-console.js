@@ -1,6 +1,6 @@
-// Print hellow word to the STDOUT
+// Print hello world to the STDOUT
 
-function displayMessage (message) {
+function displayMessage(message) {
   console.log(message);
 }
 
