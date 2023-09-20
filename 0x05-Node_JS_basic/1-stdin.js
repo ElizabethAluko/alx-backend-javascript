@@ -1,4 +1,4 @@
-// Using Process STDIN
+//1-stdin module
 
 const readline = require('readline');
 
@@ -17,6 +17,10 @@ rl.on('line', (input) => {
   console.log(`Your name is: ${input}`);
 
   // Close the program
-  console.log('This important software is now closing');
-  rl.close();
+  if (process.stdin.isTTY) {
+	  rl.close();
+  } else {
+	  console.log('This important software is now closing');
+	  rl.close();
+  }
 });
