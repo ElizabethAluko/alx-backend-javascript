@@ -1,0 +1,21 @@
+// Module that calculate number
+
+function calculateNumber (type, a, b) {
+  a = Math.round(a);
+  b = Math.round(b);
+
+  if (type === 'SUM') {
+    return a + b;
+  } else if (type === 'SUBTRACT') {
+    return a - b;
+  } else if (type === 'DIVIDE') {
+    if (b === 0) {
+      return 'Error';
+    }
+    return a / b;
+  } else {
+    throw new Error('Invalid type. Type must be SUM, SUBTRACT, or DIVIDE.');
+  }
+}
+
+module.exports = calculateNumber;
