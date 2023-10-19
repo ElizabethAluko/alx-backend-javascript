@@ -9,10 +9,10 @@ function countStudents(path) {
 
     for (const line of lines) {
       const studentData = line.split(',');
-      if (studentData.length === 2) {
+      if (studentData.length === 4) {
         students++;
-        const field = studentData[0].trim();
-        const name = studentData[1].trim();
+        const field = studentData[3].trim();
+        const name = studentData[0].trim();
         if (fields[field] === undefined) {
           fields[field] = [];
         }
@@ -35,3 +35,5 @@ function countStudents(path) {
     }
   }
 }
+
+module.exports = countStudents;
