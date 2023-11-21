@@ -1,3 +1,5 @@
+// Small HTTP servet using Node's
+
 const readline = require('readline');
 
 const rl = readline.createInterface({
